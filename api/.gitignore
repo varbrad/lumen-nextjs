@@ -1,0 +1,9 @@
+# Folders
+.idea
+vendor
+
+# Files
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml

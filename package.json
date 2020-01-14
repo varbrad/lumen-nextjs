@@ -1,0 +1,17 @@
+{
+  "name": "raffled-lumen-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+      "start:api": "pm2 start runner.js --name api -- api",
+      "start:client": "pm2 start runner.js --name client -- client",
+      "start": "npm run start:api && npm run start:client",
+      "stop": "pm2 delete api client"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "pm2": "^4.2.1"
+  }
+}
